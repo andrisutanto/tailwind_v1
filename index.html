@@ -14,8 +14,11 @@
 </head>
 <body class="font-poppins">
   <header class="p-10">
-    <nav>
+    <nav class="flex justify-between items-center">
       <img src="./assets/image/logo.png" alt="Benarr Logo">
+      <button class="hidden md:block py-2 px-5 rounded-xl bg-primary-black text-white font-semibold">
+        Sign In
+      </button>
     </nav>
   </header>
 
@@ -24,23 +27,25 @@
     <div class="mb-14">
       <div>
         <!-- badges -->
-        <div class="w-max py-4 px-5 flex gap-x-2 rounded-full font-bold text-sm items-center bg-primary-purple-100">
+        <div class="w-max py-4 px-5 flex gap-x-2 rounded-full font-bold text-sm items-center bg-primary-purple-100 md:mx-auto">
           <img src="./assets/icon/cup.png" alt="Cup" class="h-max">
           <p>
             <span class="text-primary-purple-500">12,000 </span>
             top freelancers signed up last week
           </p>
         </div>
-  
-        <h1 class="text-4xl font-bold my-8">Clients Analytics for Freelancer</h1>
-        <p class="mb-5">Learn how to track the hot prospects to bring more fortune while freelancing from home or your favorite cafes.</p>
-        <div class="flex gap-5 text-sm">
-          <button class="py-2 px-5 rounded-xl bg-primary-purple-500 text-white font-semibold">Explore Features</button>
-          <button class="py-2 px-5 flex rounded-xl bg-primary-black text-white font-semibold gap-x-2 items-center">
-            <img src="./assets/icon/play.png" alt="play button">
-            Watch Demo
-          </button>
+        <div class="md:text-center">
+          <h1 class="text-4xl font-bold my-8">Clients Analytics for Freelancer</h1>
+          <p class="my-10">Learn how to track the hot prospects to bring more fortune while freelancing from home or your favorite cafes.</p>
+          <div class="flex gap-5 text-sm md:justify-center">
+            <button class="py-2 px-5 rounded-xl bg-primary-purple-500 text-white font-semibold">Explore Features</button>
+            <button class="py-2 px-5 flex rounded-xl bg-primary-black text-white font-semibold gap-x-2 items-center">
+              <img src="./assets/icon/play.png" alt="play button">
+              Watch Demo
+            </button>
+          </div>
         </div>
+        
       </div>
       <div>
         <!-- hero image -->
@@ -48,8 +53,8 @@
     </div>
       <!-- company -->
     <div>
-      <h3 class="font-bold text-center text-lg mb-8">Over <span class="text-primary-purple-500">280,000</span> big companies trust Benarrr for their <span class="text-primary-purple-500">businesses.</span></h3>
-      <div class="flex flex-wrap gap-3">
+      <h3 class="font-bold md:text-lg text-center text-lg mb-8">Over <span class="text-primary-purple-500">280,000</span> big companies <br> trust Benarrr for their <span class="text-primary-purple-500">businesses.</span></h3>
+      <div class="flex md:justify-center flex-wrap gap-5">
         <img src="./assets/logo-company/logo-1.png" alt="Company Logo">
         <img src="./assets/logo-company/logo-2.png" alt="Company Logo">
         <img src="./assets/logo-company/logo-3.png" alt="Company Logo">
@@ -136,9 +141,9 @@
         </li>
       </ul>
 
-      <div class="flex flex-col gap-5">
-        <button class="order-2 w-full py-2 px-5 rounded-xl bg-primary-purple-500 text-white font-semibold">Get Free Trial</button>
-        <div class="order-1 flex items-center gap-x-2">
+      <div class="flex flex-col md:flex-row gap-5">
+        <button class="order-2 md:order-1 md:w-max w-full py-2 px-5 rounded-xl bg-primary-purple-500 text-white font-semibold">Get Free Trial</button>
+        <div class="order-1 md:order-2 flex items-center gap-x-2">
             <div class="flex items-center">
               <img src="./assets/person/person-1.png" alt="person-1" class="w-10 rounded-full" />
               <img src="./assets/person/person-2.png" alt="person-2" class="w-10 rounded-full m-[-10px]" />
@@ -150,7 +155,7 @@
       </div>
     </div>
     <div class="order-1">
-      <img src="./assets/image/preview.png" alt="Preview Image">
+      <img src="./assets/image/preview.png" alt="Preview Image" class="mx-auto">
     </div>
   </div>
 
@@ -258,8 +263,8 @@
       <div class="w-max py-2 px-6 rounded-full bg-primary-purple-500 text-white font-bold mb-8">Success Customer</div>
       <h2 class="text-2xl font-bold">Listen What They’re Saying About Benarrr</h2>
     </div>
-    <div class="flex flex-col gap-5">
-      <div class="p-8 rounded-3xl hover:shadow-2xl transition-all">
+    <div class="flex flex-col md:flex-row flex-wrap gap-5 md:gap-0">
+      <div class="w-full md:w-1/2 p-8 rounded-3xl hover:shadow-2xl transition-all">
         <img src="./assets/person/person-1.png" alt="person" class="rounded-full">
         <p class="my-5">Benarrr helped us boosting our clients prospective to get more high quality projects ever.</p>
         <div>
@@ -267,7 +272,7 @@
           <p class="text-primary-gray-500">CMO, Akuna Pixela Team</p>
         </div>
       </div>
-      <div class="p-8 rounded-3xl hover:shadow-2xl transition-all">
+      <div class="w-full md:w-1/2 p-8 rounded-3xl hover:shadow-2xl transition-all">
         <img src="./assets/person/person-2.png" alt="person" class="rounded-full">
         <p class="my-5">With great ecosystem Benarrr we were able secure top notch projects from companies</p>
         <div>
@@ -275,7 +280,7 @@
           <p class="text-primary-gray-500">CEO, Pastikelarboss</p>
         </div>
       </div>
-      <div class="p-8 rounded-3xl hover:shadow-2xl transition-all">
+      <div class="w-full p-8 rounded-3xl hover:shadow-2xl transition-all">
         <img src="./assets/person/person-3.png" alt="person" class="rounded-full">
         <p class="my-5">Benarrr helped us boosting our clients prospective to get more high quality projects ever.</p>
         <div>
@@ -288,7 +293,7 @@
 
    <!-- footer section -->
     <div class="p-10">
-      <div class="flex flex-col gap-5 border-t py-5">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center md:text-sm md:gap-0 gap-5 border-t py-5">
         <img src="./assets/image/logo.png" alt="" class="w-max h-max">
         <p class="text-primary-gray-500">All rights reserved Benarrr by Andri 2024</p>
       </div>
